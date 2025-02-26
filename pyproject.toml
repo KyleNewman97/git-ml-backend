@@ -22,4 +22,5 @@ distribution = true
 dev = [
     "pytest>=8.3.4",
     "notebook>=7.3.2",
+    "GitPython>=3.1.44",
 ]

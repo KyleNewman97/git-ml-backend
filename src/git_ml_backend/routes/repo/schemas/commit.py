@@ -1,4 +1,4 @@
-from src.utils.typing import DateTime
+from git_ml_backend.types import DateTime
 from pydantic import BaseModel
 
 

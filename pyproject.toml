@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "Kyle Newman", email = "kyle@thenewmans.com.au"},
 ]
-dependencies = ["pydantic>=2.10.6", "fastapi[standard]>=0.115.8", "pydriller>=2.7"]
+dependencies = ["PyDriller>=2.7", "GitPython>=3.1.44", "fastapi[standard]>=0.115.11"]
 requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "None"}
@@ -20,7 +20,5 @@ distribution = true
 
 [dependency-groups]
 dev = [
-    "pytest>=8.3.4",
-    "notebook>=7.3.2",
-    "GitPython>=3.1.44",
+    "pytest>=8.3.5",
 ]

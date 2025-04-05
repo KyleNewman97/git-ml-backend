@@ -1,5 +1,5 @@
-from datetime import datetime, timezone
-from src.utils.typing.date_time import validate_datetime
+from datetime import datetime
+from git_ml_backend.types.date_time import validate_datetime
 
 
 class TestDateTime:

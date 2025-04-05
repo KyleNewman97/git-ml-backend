@@ -1,5 +1,6 @@
 import random
 import string
+from datetime import datetime
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import Iterator
@@ -38,9 +39,11 @@ class RepoManager:
 
         return file
 
-    def commit(self, repo_name: str, author: str, msg: str):
+    def commit(
+        self, repo_name: str, author: str, msg: str, commit_time: datetime | None = None
+    ):
         repo = self._name_to_repo[repo_name]
-        repo.index.commit(msg, author=Actor(author, None))
+        repo.index.commit(msg, author=Actor(author, None), author_date=commit_time)
 
     def get_repo_path(self, repo_name: str) -> Path:
         return self._name_to_path[repo_name]

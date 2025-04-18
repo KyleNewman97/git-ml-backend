@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, status
 from git.exc import NoSuchPathError
 
-from git_ml_backend.routes.repo.schemas import Commit
 from git_ml_backend.routes.repo.repo_service import RepoService
+from git_ml_backend.routes.repo.schemas import Commit
 
 router = APIRouter()
 

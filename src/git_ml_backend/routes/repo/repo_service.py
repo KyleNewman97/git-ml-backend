@@ -1,10 +1,10 @@
 from pathlib import Path
 
-from pydriller import Repository
 from git import Repo
+from pydriller import Repository
 
-from git_ml_backend.routes.repo.schemas import Commit
 from git_ml_backend.env import ENV
+from git_ml_backend.routes.repo.schemas import Commit
 
 
 class RepoService:

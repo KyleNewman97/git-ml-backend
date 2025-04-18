@@ -1,5 +1,6 @@
-from git_ml_backend.types import DateTime
 from pydantic import BaseModel
+
+from git_ml_backend.types import DateTime
 
 
 class Commit(BaseModel):

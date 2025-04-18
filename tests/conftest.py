@@ -7,7 +7,7 @@ from typing import Iterator
 from uuid import uuid4
 
 import pytest
-from git import Repo, Actor
+from git import Actor, Repo
 
 
 class RepoManager:

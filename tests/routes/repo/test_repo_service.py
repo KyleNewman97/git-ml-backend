@@ -1,9 +1,10 @@
-import pytest
-from git.exc import NoSuchPathError
 from datetime import datetime, timedelta, timezone
 
-from tests.conftest import RepoManager
+import pytest
+from git.exc import NoSuchPathError
+
 from git_ml_backend.routes.repo.repo_service import RepoService
+from tests.conftest import RepoManager
 
 
 class TestRepoService:

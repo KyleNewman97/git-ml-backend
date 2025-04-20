@@ -1,0 +1,27 @@
+name: Python tests
+on:
+  pull_request:
+    branches: [$default-branch]
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Setup PDM
+        uses: pdm-project/setup-pdm@v4
+
+      - name: Install dependencies
+        run: pdm install
+
+      - name: Run tests
+        run: pdm run pytest
